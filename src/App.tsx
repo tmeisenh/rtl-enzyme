@@ -1,8 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
+import { TableView } from './TableView';
 import './App.css';
 
 function App() {
+  const items = ['a', 'b', 'c'];
   return (
     <div className="App">
       <header className="App-header">
@@ -19,6 +21,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <TableView items={items} />
     </div>
   );
 }
